@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "test": "vitest",
+    "a": "echo 'hello world' > ./index.txt",
     "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
     "prepare": "simple-git-hooks",
     "build": "tsup",
@@ -41,10 +42,14 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/exec": "^1.1.1",
-    "await-to-js": "^3.0.0"
+    "@gitbeaker/core": "^42.1.0",
+    "@gitbeaker/rest": "^42.1.0",
+    "await-to-js": "^3.0.0",
+    "global-agent": "^3.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
+    "@types/global-agent": "^3.0.0",
     "@types/node": "^22.13.5",
     "bumpp": "^10.0.3",
     "citty": "^0.1.6",
