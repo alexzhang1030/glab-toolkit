@@ -43,8 +43,8 @@ export async function reset(pathSpec: string, mode: 'hard' | 'mixed' | 'soft' = 
   await exec('git', ['reset', `--${mode}`, pathSpec])
 }
 
-export async function commitAll(message: string) {
-  await exec('git', ['add', '-A', '.'])
+export async function commit(message: string, addParams = ['-A', '.']) {
+  await exec('git', ['add', ...addParams])
   await exec('git', ['commit', '-m', message])
 }
 

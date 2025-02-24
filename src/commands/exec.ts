@@ -31,6 +31,7 @@ export const execCommand = defineCommand({
       ?.split(',')
       .map(x => x.trim())
     const commitMessage = getOptionalInput('commit_message') || 'chore: update'
+    const commitFiles = getOptionalInput('commit_files')?.split(',').map(x => x.trim())
 
     const api = createApi()
     const currentBranch = context.ref
@@ -49,7 +50,7 @@ export const execCommand = defineCommand({
       return 0
     }
 
-    await gitUtils.commitAll(commitMessage)
+    await gitUtils.commit(commitMessage, commitFiles)
     await gitUtils.push(execBranch, { force: true })
     const searchResult = await api.MergeRequests.all({
       projectId: context.projectId,
@@ -59,7 +60,6 @@ export const execCommand = defineCommand({
       maxPages: 1,
       perPage: 1,
     })
-    console.log(JSON.stringify(searchResult, null, 2))
     if (searchResult.length === 0) {
       console.log(
         `creating merge request from ${execBranch} to ${mrTargetBranch}.`,

@@ -28,9 +28,10 @@ for `glab-toolkit exec`
 - `INPUT_TITLE` - Title of the merge request (required)
 - `INPUT_TARGET_BRANCH` - Target branch of the merge request (default `CI_REF_NAME`)
 - `INPUT_REMOVE_SOURCE_BRANCH` - Remove source branch after merge (default `false`)
-- `INPUT_LABELS` - Labels of the merge request (default `[]`)
+- `INPUT_LABELS` - Comma separated list of labels to add to the merge request (default `''`)
 - `INPUT_COMMIT_MESSAGE` - Commit message of the merge request (default `chore: update`)
 - `INPUT_DESCRIPTION` - Description of the merge request (default `''`)
+- `INPUT_COMMIT_FILES` - Comma separated list of files to commit (default `-A .`)
 
 ## License
 
