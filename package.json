@@ -26,12 +26,14 @@
       ]
     }
   },
+  "bin": {
+    "glab-toolkit": "./bin.mjs"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "vitest",
-    "a": "echo 'hello world' > ./index.txt",
     "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
     "prepare": "simple-git-hooks",
     "build": "tsup",
