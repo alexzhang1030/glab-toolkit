@@ -1,0 +1,73 @@
+{
+  "name": "glab-toolkit",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.4.1",
+  "description": "Gitlab Toolkit CLI",
+  "author": "alexzhang1030",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexzhang1030/glab-toolkit.git"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
+    "prepare": "simple-git-hooks",
+    "build": "tsup",
+    "play": "NODE_OPTIONS=--import=tsx node ./src/index.ts",
+    "prepublishOnly": "pnpm run build",
+    "release": "vitest run && bumpp --commit \"chore: release v%s\" --push --tag && pnpm publish"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "await-to-js": "^3.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.3.0",
+    "@types/node": "^22.13.5",
+    "bumpp": "^10.0.3",
+    "citty": "^0.1.6",
+    "eslint": "^9.21.0",
+    "lint-staged": "^15.4.3",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "simple-git-hooks",
+      "esbuild"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "pnpm lint --fix"
+    ]
+  }
+}
