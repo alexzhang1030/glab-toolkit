@@ -32,6 +32,13 @@ export const execCommand = defineCommand({
       .map(x => x.trim())
     const commitMessage = getOptionalInput('commit_message') || 'chore: update'
 
+    const api = createApi()
+    const currentBranch = context.ref
+    const execBranch = `glab-toolkit/${inputBranch}`
+    await gitUtils.switchToMaybeExistingBranch(execBranch)
+    await exec('git', ['fetch', 'origin', currentBranch])
+    await gitUtils.reset(`origin/${currentBranch}`)
+
     const [err, res] = await to(execWithOutput(command))
     if (err != null || res.code !== 0) {
       throw err
@@ -41,13 +48,6 @@ export const execCommand = defineCommand({
       console.log('Tree is clean, skipping commit')
       return 0
     }
-    // commit changes
-    const api = createApi()
-    const currentBranch = context.ref
-    const execBranch = `glab-toolkit/${inputBranch}`
-    await gitUtils.switchToMaybeExistingBranch(execBranch)
-    await exec('git', ['fetch', 'origin', currentBranch])
-    await gitUtils.reset(`origin/${currentBranch}`)
 
     await gitUtils.commitAll(commitMessage)
     await gitUtils.push(execBranch, { force: true })
