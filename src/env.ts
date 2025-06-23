@@ -26,8 +26,8 @@ export const env = {
   },
 } as Env
 
-export type Env = GitLabCIPredefinedVariables &
-  MergeRequestVariables & {
+export type Env = GitLabCIPredefinedVariables
+  & MergeRequestVariables & {
     GITLAB_HOST: string
 
     GITLAB_TOKEN: string
@@ -49,8 +49,8 @@ export type Env = GitLabCIPredefinedVariables &
 // See: https://twitter.com/mattpocockuk/status/1671908303918473217
 export type LooseString<T extends string> = T | (string & {})
 
-type MergeRequestVariables =
-  | {
+type MergeRequestVariables
+  = | {
     // this is used to be checked if the current job is a merge request job
     CI_MERGE_REQUEST_SOURCE_BRANCH_NAME: undefined
   }
