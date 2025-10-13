@@ -50,7 +50,7 @@
     "global-agent": "^3.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
+    "@antfu/eslint-config": "^5.4.1",
     "@types/global-agent": "^3.0.0",
     "@types/node": "^22.13.5",
     "bumpp": "^10.0.3",
