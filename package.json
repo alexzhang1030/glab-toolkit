@@ -44,8 +44,8 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/exec": "^1.1.1",
-    "@gitbeaker/core": "^42.1.0",
-    "@gitbeaker/rest": "^42.1.0",
+    "@gitbeaker/core": "^43.7.0",
+    "@gitbeaker/rest": "^43.7.0",
     "await-to-js": "^3.0.0",
     "global-agent": "^3.0.0"
   },

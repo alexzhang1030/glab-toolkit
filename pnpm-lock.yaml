@@ -15,11 +15,11 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       '@gitbeaker/core':
-        specifier: ^42.1.0
-        version: 42.1.0
+        specifier: ^43.7.0
+        version: 43.7.0
       '@gitbeaker/rest':
-        specifier: ^42.1.0
-        version: 42.1.0
+        specifier: ^43.7.0
+        version: 43.7.0
       await-to-js:
         specifier: ^3.0.0
         version: 3.0.0
@@ -653,16 +653,16 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@gitbeaker/core@42.1.0':
-    resolution: {integrity: sha512-xoP3mUjiGyUdN+utmQ+wDh9r7b4bcf3wa8jxkDTZTiuyd7Tg+354nJhwBNBsq2vFfyQvONOyOT1hsFjTGbTpBA==}
+  '@gitbeaker/core@43.7.0':
+    resolution: {integrity: sha512-quls2OE8U9aovreuqm7Vtdo9X8WXJfQO6j0kBUi6oY/Htm5pc5euOBwbcG7wgzvPTfYbgE2c4aAHXK8jsR/yAg==}
     engines: {node: '>=18.20.0'}
 
-  '@gitbeaker/requester-utils@42.1.0':
-    resolution: {integrity: sha512-q5NXy563UUM2AisM/V6Z3A92hIVQNMyx/VBj5Mg7gJkEtIYL+pEyibjIQxcq6nQ3bnj6bkM8NYguCs5tg7GR0Q==}
+  '@gitbeaker/requester-utils@43.7.0':
+    resolution: {integrity: sha512-Rw2j4WSe+uPYN5EEUgW8Xk7HJJNFk2/hyW8tJ0oNchkmcwouEvRCJd8lwNR2O3FkT06WitsKg3qycyxZQOGHyA==}
     engines: {node: '>=18.20.0'}
 
-  '@gitbeaker/rest@42.1.0':
-    resolution: {integrity: sha512-7eSXktkUEF2O2A3F1cO/ZJ/3Mco4v59rptghzhrvjZryPcAxlYWxNJbuFtjc5bc0OnJW7i5AYfJSYvZQSh3gYg==}
+  '@gitbeaker/rest@43.7.0':
+    resolution: {integrity: sha512-CqTP1uRcz1K5KRm95mo3H0Q/KaJfm85LPXbH72sA2ZFoYpdH87hWudurgOa726a80ePKGupKtB4em7l+4NCcaQ==}
     engines: {node: '>=18.20.0'}
 
   '@humanfs/core@0.19.1':
@@ -2224,8 +2224,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  rate-limiter-flexible@4.0.1:
-    resolution: {integrity: sha512-2/dGHpDFpeA0+755oUkW+EKyklqLS9lu0go9pDsbhqQjZcxfRyJ6LA4JI0+HAdZ2bemD/oOjUeZQB2lCZqXQfQ==}
+  rate-limiter-flexible@8.1.0:
+    resolution: {integrity: sha512-J+4xBdVboibP1h0Imn4nFoCLT+UM9Os9vJaWaRWkLsQxS7jrhLJeLlmzP5hyCEsLwtgFIIY5KcWiJGyyVTMaKg==}
 
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
@@ -3131,23 +3131,23 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@gitbeaker/core@42.1.0':
+  '@gitbeaker/core@43.7.0':
     dependencies:
-      '@gitbeaker/requester-utils': 42.1.0
+      '@gitbeaker/requester-utils': 43.7.0
       qs: 6.14.0
       xcase: 2.0.1
 
-  '@gitbeaker/requester-utils@42.1.0':
+  '@gitbeaker/requester-utils@43.7.0':
     dependencies:
       picomatch-browser: 2.2.6
       qs: 6.14.0
-      rate-limiter-flexible: 4.0.1
+      rate-limiter-flexible: 8.1.0
       xcase: 2.0.1
 
-  '@gitbeaker/rest@42.1.0':
+  '@gitbeaker/rest@43.7.0':
     dependencies:
-      '@gitbeaker/core': 42.1.0
-      '@gitbeaker/requester-utils': 42.1.0
+      '@gitbeaker/core': 43.7.0
+      '@gitbeaker/requester-utils': 43.7.0
 
   '@humanfs/core@0.19.1': {}
 
@@ -4962,7 +4962,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  rate-limiter-flexible@4.0.1: {}
+  rate-limiter-flexible@8.1.0: {}
 
   rc9@2.1.2:
     dependencies:
