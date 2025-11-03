@@ -52,7 +52,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
     "@types/global-agent": "^3.0.0",
-    "@types/node": "^22.13.5",
+    "@types/node": "^24.10.0",
     "bumpp": "^10.0.3",
     "citty": "^0.1.6",
     "eslint": "^9.21.0",
