@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@actions/core": "^2.0.1",
-    "@actions/exec": "^1.1.1",
+    "@actions/exec": "^2.0.0",
     "@gitbeaker/core": "^43.7.0",
     "@gitbeaker/rest": "^43.7.0",
     "await-to-js": "^3.0.0",
