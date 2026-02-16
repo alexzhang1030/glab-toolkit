@@ -47,7 +47,7 @@
     "@gitbeaker/core": "^43.7.0",
     "@gitbeaker/rest": "^43.7.0",
     "await-to-js": "^3.0.0",
-    "global-agent": "^3.0.0"
+    "global-agent": "^4.1.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
