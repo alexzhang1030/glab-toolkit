@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.3.0
-        version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.3.13)(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))
+        version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.3.13)(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))
       '@types/global-agent':
         specifier: ^3.0.0
         version: 3.0.0
@@ -37,8 +37,8 @@ importers:
         specifier: ^24.10.0
         version: 24.10.0
       bumpp:
-        specifier: ^11.0.0
-        version: 11.0.0
+        specifier: ^12.0.0
+        version: 12.0.0
       citty:
         specifier: ^0.1.6
         version: 0.1.6
@@ -53,7 +53,7 @@ importers:
         version: 2.11.1
       tsup:
         specifier: ^8.3.6
-        version: 8.3.6(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(typescript@6.0.2)(yaml@2.8.4)
+        version: 8.3.6(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(typescript@6.0.2)(yaml@2.9.0)
       tsx:
         specifier: ^4.19.3
         version: 4.19.3
@@ -62,7 +62,7 @@ importers:
         version: 6.0.2
       vitest:
         specifier: ^4.0.4
-        version: 4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4)
+        version: 4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0)
 
 packages:
 
@@ -942,9 +942,9 @@ packages:
     resolution: {integrity: sha512-p1n8zyCkt1BVrKNFymOHjcDSAl7oq/gUvfgULv2EblgpPVQlQr9yHnWjg9IJ2MhfwPqiYqMMrr01OY7yQoK2yA==}
     engines: {node: '>=18.20'}
 
-  bumpp@11.0.0:
-    resolution: {integrity: sha512-rxW8H4VIB+KvnNDZ87y4tyktHydN4wzmXHYJ8CfzhWl8yKd6yuQMPcV78Hrz47udmBssjrN5wQo+JLmyU94gaA==}
-    engines: {node: '>=20.19.0'}
+  bumpp@12.0.0:
+    resolution: {integrity: sha512-2uuObtROJvEGZJk4T6t3fDgUAmgDYF0PeSZt23GCn1ItxECvR+ROVJNYT7r1lS8nIMJae6IkIgcDEIbT5iwWAA==}
+    engines: {node: ^22.18.0 || ^24.11.0 || >=26.0.0}
     hasBin: true
 
   bundle-require@5.0.0:
@@ -1872,8 +1872,8 @@ packages:
   package-manager-detector@0.2.9:
     resolution: {integrity: sha512-+vYvA/Y31l8Zk8dwxHhL3JfTuHPm6tlxM2A3GeQyl7ovYnSp1+mzAxClxaOr0qO1TtPxbQxetI7v5XqKLJZk7Q==}
 
-  package-manager-detector@1.6.0:
-    resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
+  package-manager-detector@1.8.0:
+    resolution: {integrity: sha512-yQA4H19AmPEoMUeavPMDIe1higySl/gH/yaQrkT/s07Qp+7pp2hYz30N3z2l5BkjVkF9Ow6o0wjJamm2y7Sn0A==}
 
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
@@ -2216,12 +2216,12 @@ packages:
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
-  tinyexec@1.1.2:
-    resolution: {integrity: sha512-dAqSqE/RabpBKI8+h26GfLq6Vb3JVXs30XYQjdMjaj/c2tS8IYYMbIzP599KtRj7c57/wYApb3QjgRgXmrCukA==}
+  tinyexec@1.2.4:
+    resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
     engines: {node: '>=18'}
 
-  tinyglobby@0.2.15:
-    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
   tinyrainbow@3.0.3:
@@ -2351,6 +2351,10 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
+  verkit@0.1.2:
+    resolution: {integrity: sha512-WqkT8n3hqizuCu71W3bUzf5fjBmkbXcudsehe/NbxA8PgqoKnSOY5K0Ba2ckg1qaRaSpSz7as/n9K1R9JXjQKg==}
+    engines: {node: '>=18.12.0'}
+
   vite@7.1.12:
     resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -2474,8 +2478,8 @@ packages:
     resolution: {integrity: sha512-4wZWvE398hCP7O8n3nXKu/vdq1HcH01ixYlCREaJL5NUMwQ0g3MaGFUBNSlmBtKmhbtVG/Cm6lyYmSVTEVil8A==}
     engines: {node: ^14.17.0 || >=16.0.0}
 
-  yaml@2.8.4:
-    resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -2506,7 +2510,7 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@antfu/eslint-config@4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.3.13)(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))':
+  '@antfu/eslint-config@4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.3.13)(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))':
     dependencies:
       '@antfu/install-pkg': 1.0.0
       '@clack/prompts': 0.10.0
@@ -2515,7 +2519,7 @@ snapshots:
       '@stylistic/eslint-plugin': 4.0.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)
       '@typescript-eslint/eslint-plugin': 8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)
       '@typescript-eslint/parser': 8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)
-      '@vitest/eslint-plugin': 1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))
+      '@vitest/eslint-plugin': 1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))
       ansis: 3.15.0
       cac: 6.7.14
       eslint: 9.21.0(jiti@2.6.1)
@@ -3089,13 +3093,13 @@ snapshots:
       '@typescript-eslint/types': 8.24.1
       eslint-visitor-keys: 4.2.0
 
-  '@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))':
+  '@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2))(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))':
     dependencies:
       '@typescript-eslint/utils': 8.24.1(eslint@9.21.0(jiti@2.6.1))(typescript@6.0.2)
       eslint: 9.21.0(jiti@2.6.1)
     optionalDependencies:
       typescript: 6.0.2
-      vitest: 4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4)
+      vitest: 4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0)
 
   '@vitest/expect@4.0.4':
     dependencies:
@@ -3106,13 +3110,13 @@ snapshots:
       chai: 6.2.0
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.4(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))':
+  '@vitest/mocker@4.0.4(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))':
     dependencies:
       '@vitest/spy': 4.0.4
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4)
+      vite: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0)
 
   '@vitest/pretty-format@4.0.4':
     dependencies:
@@ -3243,17 +3247,17 @@ snapshots:
 
   builtin-modules@4.0.0: {}
 
-  bumpp@11.0.0:
+  bumpp@12.0.0:
     dependencies:
       args-tokenizer: 0.3.0
       cac: 7.0.0
       jsonc-parser: 3.3.1
-      package-manager-detector: 1.6.0
-      semver: 7.7.4
-      tinyexec: 1.1.2
-      tinyglobby: 0.2.15
+      package-manager-detector: 1.8.0
+      tinyexec: 1.2.4
+      tinyglobby: 0.2.17
       unconfig: 7.5.0
-      yaml: 2.8.4
+      verkit: 0.1.2
+      yaml: 2.9.0
 
   bundle-require@5.0.0(esbuild@0.24.0):
     dependencies:
@@ -3997,9 +4001,9 @@ snapshots:
       listr2: 10.2.1
       picomatch: 4.0.4
       string-argv: 0.3.2
-      tinyexec: 1.1.2
+      tinyexec: 1.2.4
     optionalDependencies:
-      yaml: 2.8.4
+      yaml: 2.9.0
 
   listr2@10.2.1:
     dependencies:
@@ -4427,7 +4431,7 @@ snapshots:
 
   package-manager-detector@0.2.9: {}
 
-  package-manager-detector@1.6.0: {}
+  package-manager-detector@1.8.0: {}
 
   parent-module@1.0.1:
     dependencies:
@@ -4479,14 +4483,14 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@6.0.1(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(yaml@2.8.4):
+  postcss-load-config@6.0.1(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(yaml@2.9.0):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 2.6.1
       postcss: 8.5.6
       tsx: 4.19.3
-      yaml: 2.8.4
+      yaml: 2.9.0
 
   postcss-selector-parser@6.0.15:
     dependencies:
@@ -4772,9 +4776,9 @@ snapshots:
 
   tinyexec@0.3.2: {}
 
-  tinyexec@1.1.2: {}
+  tinyexec@1.2.4: {}
 
-  tinyglobby@0.2.15:
+  tinyglobby@0.2.17:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
@@ -4805,7 +4809,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.3.6(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(typescript@6.0.2)(yaml@2.8.4):
+  tsup@8.3.6(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(typescript@6.0.2)(yaml@2.9.0):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -4815,13 +4819,13 @@ snapshots:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(yaml@2.8.4)
+      postcss-load-config: 6.0.1(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.3)(yaml@2.9.0)
       resolve-from: 5.0.0
       rollup: 4.52.5
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tinyexec: 0.3.2
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.5.6
@@ -4908,25 +4912,27 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4):
+  verkit@0.1.2: {}
+
+  vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
       postcss: 8.5.6
       rollup: 4.52.5
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 24.10.0
       fsevents: 2.3.3
       jiti: 2.6.1
       tsx: 4.19.3
-      yaml: 2.8.4
+      yaml: 2.9.0
 
-  vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4):
+  vitest@4.0.4(@types/debug@4.1.12)(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0):
     dependencies:
       '@vitest/expect': 4.0.4
-      '@vitest/mocker': 4.0.4(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4))
+      '@vitest/mocker': 4.0.4(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0))
       '@vitest/pretty-format': 4.0.4
       '@vitest/runner': 4.0.4
       '@vitest/snapshot': 4.0.4
@@ -4941,9 +4947,9 @@ snapshots:
       std-env: 3.10.0
       tinybench: 2.9.0
       tinyexec: 0.3.2
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
       tinyrainbow: 3.0.3
-      vite: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.8.4)
+      vite: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.19.3)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/debug': 4.1.12
@@ -5024,9 +5030,9 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.8.4
+      yaml: 2.9.0
 
-  yaml@2.8.4: {}
+  yaml@2.9.0: {}
 
   yocto-queue@0.1.0: {}
 
