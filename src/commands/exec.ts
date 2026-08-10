@@ -1,3 +1,6 @@
+import { exec } from '@actions/exec'
+import { to } from 'await-to-js'
+import { defineCommand } from 'citty'
 import { context } from '@/context'
 import * as gitUtils from '@/git'
 import {
@@ -7,9 +10,6 @@ import {
   getOptionalInput,
   setup,
 } from '@/utils'
-import { exec } from '@actions/exec'
-import { to } from 'await-to-js'
-import { defineCommand } from 'citty'
 
 export const execCommand = defineCommand({
   meta: {
