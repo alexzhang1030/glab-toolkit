@@ -63,14 +63,6 @@
     "typescript": "^6.0.3",
     "vitest": "^4.1.10"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@swc/core",
-      "esbuild",
-      "simple-git-hooks",
-      "unrs-resolver"
-    ]
-  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
