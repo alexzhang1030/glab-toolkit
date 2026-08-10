@@ -65,8 +65,10 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
       "simple-git-hooks",
-      "esbuild"
+      "unrs-resolver"
     ]
   },
   "simple-git-hooks": {
