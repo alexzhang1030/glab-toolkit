@@ -2,7 +2,7 @@
   "name": "glab-toolkit",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.21.0",
   "description": "Gitlab Toolkit CLI",
   "author": "alexzhang1030",
   "license": "MIT",
