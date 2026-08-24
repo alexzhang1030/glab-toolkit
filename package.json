@@ -2,7 +2,7 @@
   "name": "glab-toolkit",
   "type": "module",
   "version": "0.1.1",
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@11.23.0",
   "description": "Gitlab Toolkit CLI",
   "author": "alexzhang1030",
   "license": "MIT",
@@ -55,13 +55,13 @@
     "@types/node": "^24.13.3",
     "bumpp": "^12.2.1",
     "citty": "^0.2.2",
-    "eslint": "^10.8.1",
+    "eslint": "^10.9.0",
     "lint-staged": "^17.3.0",
     "simple-git-hooks": "^2.13.1",
     "tsup": "^8.5.1",
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
