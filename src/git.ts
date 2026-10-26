@@ -18,7 +18,12 @@ export async function pullBranch(branch: string) {
 export async function push(branch: string, { force }: { force?: boolean } = {}) {
   await exec(
     'git',
-    ['push', 'origin', `HEAD:${branch}`, force && '--force'].filter(identify),
+    [
+      'push',
+      'origin',
+      `HEAD:${branch}`,
+      force && '--force',
+    ].filter(identify),
   )
 }
 
